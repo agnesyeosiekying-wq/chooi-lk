@@ -60,20 +60,39 @@ p {
 }
 
 /* =========================
-   NAVBAR
+   LOGO BRANDING
 ========================= */
-.navbar {
+.logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background: transparent;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
-.logo {
+.brand-name {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
+}
+
+.brand-title {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+/* =========================
+   NAV BUTTON (CTA)
+========================= */
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white !important;
+}
+
+.nav-btn:hover {
+  background: var(--accent);
 }
 
 .nav-links a {
@@ -113,16 +132,32 @@ p {
   position: relative;
   z-index: 2;
   max-width: 600px;
+     animation: fadeUp 1s ease forwards;
 }
 
 .hero h1 {
   color: white;
-  font-size: 48px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .hero p {
   color: #ddd;
   margin: 15px 0 25px;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -158,6 +193,13 @@ p {
   background: var(--secondary);
 }
 
+.section-subtitle {
+  max-width: 600px;
+  margin-top: 10px;
+  color: var(--text-light);
+}
+
+
 /* =========================
    SERVICES
 ========================= */
@@ -172,12 +214,19 @@ p {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   border: 1px solid #eee;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.service-card img {
+  margin-bottom: 15px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .service-card h3 {
