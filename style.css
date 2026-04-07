@@ -190,6 +190,8 @@ p {
   );
   display: flex;
   align-items: center;
+  justify-content: center; /* ADD THIS */
+  text-align: center;      /* ADD THIS */
 }
 
 .hero::before {
@@ -226,14 +228,23 @@ p {
 .hero-content {
   position: relative;
   z-index: 3;
+  max-width: 800px;
+  margin: 0 auto;
+  transform: translateY(-20px);
 }
 
 .hero h1 {
   color: #c6a96b;
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.75);
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 25px;
 }
 
 @keyframes fadeUp {
@@ -259,8 +270,8 @@ p {
   border-radius: 30px;
   font-size: 14px;
   transition: 0.3s ease;
+  margin-top: 10px;
 }
-
 .btn:hover {
   background: #c6a96b;
   color: #0f3d3e;
