@@ -263,6 +263,29 @@ p {
   color: var(--text-light);
 }
 
+.doctor-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE */
+.doctor-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* TEXT */
+.doctor-content h2 {
+  margin-bottom: 20px;
+}
+
+.doctor-intro {
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
 
 /* =========================
    SERVICES
