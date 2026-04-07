@@ -80,7 +80,6 @@ p {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
-  margin-right: 40px;
 }
 
 .brand-name {
@@ -112,7 +111,9 @@ p {
 .nav-inner {
   display: flex;
   align-items: center;
-  padding: 25px 0;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 /* LOGO */
@@ -129,8 +130,8 @@ p {
   margin-left: auto;
   display: flex;
   align-items: center;
+  gap: 30px;
 }
-
 /* SPACING */
 .nav-links a {
   margin-left: 35px;
@@ -143,12 +144,12 @@ p {
 }
 
 .nav-btn {
-  margin-left: 40px;
   padding: 8px 20px;
   border: 1px solid #c6a96b;
   border-radius: 25px;
   color: #c6a96b !important;
 }
+
 
 .nav-btn:hover {
   background: #c6a96b;
