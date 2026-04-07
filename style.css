@@ -419,6 +419,40 @@ p {
   font-style: italic;
 }
 
+.cta-section {
+  background: linear-gradient(135deg, #071f20, #0f3d3e);
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.cta-section h2 {
+  color: #c6a96b;
+}
+
+.cta-section h2::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section p {
+  color: rgba(255,255,255,0.75);
+  margin: 20px 0 30px;
+}
+
+/* BUTTON GROUP */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 /* =========================
    FOOTER
 ========================= */
