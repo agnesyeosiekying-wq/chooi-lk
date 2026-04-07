@@ -361,6 +361,21 @@ p {
   margin-bottom: 10px;
 }
 
+#services {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#services .section-subtitle {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+#services .btn-outline {
+  display: inline-block;
+  margin-top: 25px;
+}
+
 /* =========================
    IMAGE CARD (Before/After)
 ========================= */
