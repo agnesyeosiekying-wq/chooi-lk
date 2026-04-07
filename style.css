@@ -113,16 +113,11 @@ p {
 }
 
 .brand-name {
-  font-size: 22px;
-  font-weight: 600;
+  color: #e5d3a3;
 }
 
 .brand-title {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  color: var(--text-light);
-  text-transform: uppercase;
-  margin-top: 2px;
+  color: rgba(229,211,163,0.6);
 }
 
 /* NAV LINKS */
@@ -133,11 +128,7 @@ p {
 }
 
 .nav-links a {
-  margin-left: 35px;
-  text-decoration: none;
-  color: var(--text-dark);
-  font-size: 14px;
-  position: relative;
+  color: #e5d3a3;
 }
 
 .nav-links a:hover {
@@ -176,22 +167,26 @@ p {
 }
 
 .navbar {
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
+
 /* =========================
    HERO SECTION
 ========================= */
+
 .hero {
+  position: relative;
   height: 90vh;
-  background: url('hero.jpg') center/cover no-repeat;
+  background: linear-gradient(
+    135deg,
+    #071f20,
+    #0f3d3e
+  );
   display: flex;
   align-items: center;
-  color: var(--white);
-  position: relative;
 }
 
 .hero::after {
@@ -207,6 +202,22 @@ background: linear-gradient(
   left: 0;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  top: 0;
+  left: 0;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -215,17 +226,11 @@ background: linear-gradient(
 }
 
 .hero h1 {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.2;
+  color: #c6a96b;
 }
 
 .hero p {
-  color: #ddd;
-  margin: 15px 0 25px;
-  font-size: 16px;
-  max-width: 500px;
+  color: rgba(255,255,255,0.7);
 }
 
 @keyframes fadeUp {
@@ -243,19 +248,14 @@ background: linear-gradient(
    BUTTONS
 ========================= */
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background: linear-gradient(135deg, #c6a96b, #a3874f);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 14px;
-  transition: 0.3s ease;
+  background: transparent;
+  border: 1px solid #c6a96b;
+  color: #c6a96b;
 }
 
 .btn:hover {
-    opacity: 0.9;
-   background: var(--accent);
+  background: #c6a96b;
+  color: #0f3d3e;
 }
 
 /* =========================
