@@ -355,6 +355,7 @@ p {
   border-radius: 12px;
   transition: all 0.3s ease;
   border: 1px solid #eee;
+  cursor: pointer;
 }
 
 .service-card:hover {
@@ -399,6 +400,18 @@ p {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* HOVER EFFECT (premium feel) */
+.service-link:hover .service-card {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 /* =========================
