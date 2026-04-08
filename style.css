@@ -275,7 +275,6 @@ p {
 .btn:hover {
   background: #c6a96b;
   color: #0f3d3e;
-}
 
 .btn-outline {
   display: inline-block;
@@ -381,6 +380,22 @@ p {
 #services .section-subtitle {
   max-width: 700px;
   margin: 15px auto;
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #c6a96b;
+  text-decoration: none;
+  border-bottom: 1px solid #c6a96b;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  opacity: 0.7;
 }
 
 #services .btn-outline {
