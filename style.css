@@ -376,7 +376,8 @@ p {
 }
 
 .img-eyelid {
-  object-position: center 20%;
+  object-position: center 35%;
+  height: 180px;
 }
 
 .img-fat {
