@@ -447,25 +447,24 @@ p {
 
 .fat-image img {
   width: 100%;
-  max-width: 420px;   /* 🔥 smaller = more premium */
+  max-width: 700px; /* match grid width */
   border-radius: 16px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
 .fat-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 🔥 2 columns instead of 3 */
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   max-width: 700px;
-  margin: 0 auto; /* center it */
+  margin: 0 auto;
 }
 
 .fat-item {
   background: white;
-  padding: 25px;
+  padding: 20px; /* slightly tighter */
   border-radius: 12px;
   border: 1px solid #eee;
-  text-align: left;
 }
 /* =========================
    IMAGE CARD (Before/After)
