@@ -440,7 +440,33 @@ p {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
+.fat-image {
+  text-align: center;
+  margin: 40px 0 50px;
+}
 
+.fat-image img {
+  width: 100%;
+  max-width: 420px;   /* 🔥 smaller = more premium */
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.fat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 2 columns instead of 3 */
+  gap: 25px;
+  max-width: 700px;
+  margin: 0 auto; /* center it */
+}
+
+.fat-item {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  text-align: left;
+}
 /* =========================
    IMAGE CARD (Before/After)
 ========================= */
