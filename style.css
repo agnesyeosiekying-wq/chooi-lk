@@ -259,6 +259,95 @@ p {
 }
 
 /* =========================
+   INTRO VIDEO SECTION
+========================= */
+
+.intro-video-section{
+  background:#faf9f7;
+  padding:100px 0;
+}
+
+.intro-video-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+/* VIDEO */
+
+.intro-video-wrapper{
+  position:relative;
+}
+
+.intro-video-wrapper video{
+  width:100%;
+  border-radius:18px;
+  display:block;
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+  object-fit:cover;
+}
+
+/* CONTENT */
+
+.intro-video-content h2{
+  margin-bottom:25px;
+  max-width:500px;
+}
+
+.intro-video-content h2::after{
+  margin-top:14px;
+}
+
+.intro-tag{
+  display:inline-block;
+  margin-bottom:18px;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#c6a96b;
+  font-weight:500;
+}
+
+.intro-highlight{
+  font-size:17px;
+  line-height:1.8;
+  color:#1c2b2b;
+  margin-bottom:20px;
+  font-weight:500;
+}
+
+.intro-video-content p{
+  margin-bottom:18px;
+  max-width:540px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .intro-video-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .intro-video-content{
+    text-align:center;
+  }
+
+  .intro-video-content h2::after{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .intro-video-content p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+}
+
+/* =========================
    BUTTONS
 ========================= */
 .btn {
