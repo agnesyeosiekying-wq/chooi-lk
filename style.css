@@ -277,15 +277,14 @@ p {
 /* VIDEO */
 
 .intro-video-wrapper{
-  position:relative;
+  width:100%;
 }
 
-.intro-video-wrapper video{
+.intro-video{
   width:100%;
   border-radius:18px;
   display:block;
   box-shadow:0 20px 40px rgba(0,0,0,0.08);
-  object-fit:cover;
 }
 
 /* CONTENT */
@@ -293,10 +292,6 @@ p {
 .intro-video-content h2{
   margin-bottom:25px;
   max-width:500px;
-}
-
-.intro-video-content h2::after{
-  margin-top:14px;
 }
 
 .intro-tag{
@@ -333,16 +328,6 @@ p {
 
   .intro-video-content{
     text-align:center;
-  }
-
-  .intro-video-content h2::after{
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .intro-video-content p{
-    margin-left:auto;
-    margin-right:auto;
   }
 
 }
